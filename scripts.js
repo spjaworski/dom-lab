@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     squareButton.addEventListener('click', function(){
+        
         insertSquare();
     })
 });

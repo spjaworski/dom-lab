@@ -1,6 +1,9 @@
 .block {
+    display: flex;
     background-color: black;
-    width: 50px;
+    width: 30px;
     padding: 50px;
     margin: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
