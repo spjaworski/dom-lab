@@ -11,13 +11,18 @@ document.addEventListener('DOMContentLoaded', function() {
     blockRow.className = 'row';
     headContainer.appendChild(blockRow);
 
+    squareNumber = 0;
+
     function insertSquare() {
         let newSquare = document.createElement('div');
         newSquare.className = 'block';
+        newSquare.id = squareNumber;
         blockRow.appendChild(newSquare);
     }
 
     squareButton.addEventListener('click', function(){
         insertSquare();
-    })
+        console.log(squareNumber);
+        squareNumber += 1;
+      })
 });
